@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Evilia Listanti">
+    <link rel="shortcut icon" href="./style/asset/Double-J-Design-Ravenna-3d-Books.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- <script src="https://kit.fontawesome.com/62d7e7e21c.js" crossorigin="anonymous"></script> -->
+    <title>BookShelf</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-head">
+                <h2>Your Book-Shelf</h2>
+            </div>
+            <div class="nav-item">
+                <a href="#">About me</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="containerForm">
+                <div class="wrapper">
+                    <div class="title-form">
+                        <img src="./style/asset/Goescat-Macaron-Text-editor.svg" alt="" width="20%">
+                        <h2>- INPUT YOUR DATAS BOOK -</h2>
+                    </div>
+                    <form action="" id="form">
+                        <label for="tittle">Input Your Title Book</label><br>
+                        <input type="text" class='input' id="title" required><br><br>
+                        <label for="author">Input Book Author</label><br>
+                        <input type="text" class='input' id="author" required><br><br>
+                        <label for="year">Input Book Year</label><br>
+                        <input type="number" class='input' id="year" required><br><br>
+                        <input type="submit" value="Submit" name="Submit">
+                    </form>
+                </div>
+                <div class="search">
+                    <h2>Search Book Here</h2>
+                    <div class="bar-search">
+                        <input type="text" id="search" placeholder="   search your book here ..." required>
+                        <button id="search-book" type="submit">search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shelf">
+                <div class="shelf2-tittle">Rak Buku Belum Selesai Dibaca</div>
+                <div class="shelf2-items" id="shelf2-items"></div>
+            </div>
+            <div class="shelf">
+                <div class="shelf1-tittle">Rak Buku Selesai Dibaca</div>
+                <div class="shelf1-items" id=shelf1-items></div>
+            </div>
+        </div>
+    </main>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Buku yang anda cari ada di rak, silahkan discroll di rak ya!</p>
+    </div>
+  
+  </div>
+  
+    <script src="./main.js"></script>
+</body>
+</html>
